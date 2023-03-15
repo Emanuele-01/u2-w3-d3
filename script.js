@@ -23,15 +23,16 @@ fetch("https://striveschool-api.herokuapp.com/books")
             <p class="card-text">
             ${libro.price}</p>
             <a href="#" class="btn btn-primary">Coppalo</a>
-            <a href="#" class="btn btn-primary">Remove</a>
+            <a href="#" class="delete btn btn-primary">Remove</a>
             </div>
         </div>`
-        
-        const removeBtn = col.querySelector(".btn")
+
+        const removeBtn = col.querySelector(".delete")
         removeBtn.addEventListener("click", () =>{
         col.remove()
     })
             linea.appendChild(col);
     });
+
 });
 
